@@ -1,6 +1,6 @@
 {
   "name": "site-scanner-datastore-elasticsearch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Elasticsearch datastore for site-scanner",
   "main": "lib/datastore.js",
   "scripts": {
