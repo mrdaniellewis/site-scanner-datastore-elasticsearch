@@ -2,7 +2,7 @@
   "name": "site-scanner-datastore-elasticsearch",
   "version": "0.1.0",
   "description": "Elasticsearch datastore for site-scanner",
-  "main": "index.js",
+  "main": "lib/datastore.js",
   "scripts": {
     "test": "mocha",
     "test-coverage": "istanbul cover node_modules/mocha/bin/_mocha"
