@@ -67,6 +67,34 @@ describe( 'datastore', function() {
 
         } );
 
+        it( 'adds multiple reference', function() {
+
+            const datastore = new Datastore( testConfig );
+            return datastore.addReference( [ 
+                {
+                    url: 'http://www.bbc.co.uk/test',
+                    source: {
+                        nodeName: 'a',
+                        attributes: { href: '/test' },
+                        base: undefined,
+                        url: 'http://www.bbc.co.uk/',
+                        type: 'html',
+                    },
+                },
+                {
+                    url: 'http://www.bbc.co.uk/test',
+                    source: {
+                        nodeName: 'a',
+                        attributes: { href: '/test' },
+                        base: undefined,
+                        url: 'http://www.bbc.co.uk/',
+                        type: 'html',
+                    },
+                },
+            ] );
+
+        } );
+
         it( 'errors if elastic search cannot be found', function() {
 
             const errorConfig = {
